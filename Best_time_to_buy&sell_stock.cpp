@@ -41,7 +41,7 @@ public:
         }else if(state==1){
             return max(prices[i]+rec(prices, 0, i+2), rec(prices, 1, i+1));
         }
-        return -111111;
+        return -111111;     //This means nothing. After an "else-if" statement ends, we need to mandatorily return something.
     }
         
     int maxProfit(vector<int>& prices) {
