@@ -12,7 +12,7 @@
         if(dp[i][n]!=-1){return dp[i][n];}
         
         if(i>n){
-            return dp[i][n] = rec(price, n, i+1);
+            return dp[i][n] = 0;//rec(price, n, i+1);
         }else{
             return dp[i][n] = max(rec(price, n, i+1), price[i-1] + rec(price, n-i, i));
         }
